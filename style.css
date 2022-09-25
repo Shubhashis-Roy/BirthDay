@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #06031d;
+}
+
+.bday{
+    margin-top: 40px;
+    text-align: center;
+    background: linear-gradient(180deg, #f80112 0%, #2602f5 110%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    font-size: 80px;
+    font-family: bday;
+}
+
+.name{
+    padding-right: 100px;
+    margin-left: 550px;
+    margin-top: 20px;
+    text-align: center;
+    background: linear-gradient(180deg, #f80112 0%, #2602f5 110%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    font-size: 80px;
+    font-family: bday;
+    display: inline-block;
+}
+
+.name:hover{
+    -webkit-box-reflect: below -8px -webkit-gradient(linear, right top, right bottom, 
+    from(transparent), color-stop( 85%, transparent), to(rgba(42, 99, 99, 1)));
+}
+
+.wrapper{
+    position: relative;
+    width: 320px;
+    margin: 150px, auto;
+    perspective: 1000px;
+    margin-bottom: 500px;
+}
+
+.img-area{
+    padding-left: 600px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateY(-360deg) translateZ(-300px);
+    animation: animate 25s steps(1000, end) infinite;
+}
+
+.single-img{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    top: 10px;
+    left: 10px;
+}
+
+.single-img img{
+    width: 300px;
+    height: 200px;
+    border: 5px solid #fff;
+}
+
+.single-img.img-1{
+    transform: rotateY(0deg) translateZ(300px);
+}
+
+.single-img.img-2{
+    transform: rotateY(60deg) translateZ(300px);
+}
+
+.single-img.img-3{
+    transform: rotateY(120deg) translateZ(300px);
+}
+
+.single-img.img-4{
+    transform: rotateY(180deg) translateZ(300px);
+}
+
+.single-img.img-5{
+    transform: rotateY(240deg) translateZ(300px);
+}
+
+.single-img.img-6{
+    transform: rotateY(300deg) translateZ(300px);
+}
+
+img{
+    filter: grayscale(90%);
+    transition: 1s;
+    cursor: pointer;
+}
+
+img:hover{
+    transition: 1s;
+    filter: grayscale();
+
+}
+
+@keyframes animate{
+    from{
+        transform: rotateY(-360deg);
+    }
+    to{
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes text1{
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 14ch;
+    }
+}
+
+@font-face{
+    font-family: bday;
+    src: url(bday.ttf);
+}
