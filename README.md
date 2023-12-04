@@ -3,7 +3,7 @@
 <h2> Birth Day </h2>
 </div>
 
-<h3> <a href= "https://shubhashis-roy.github.io/BirthDay/" >Live Demo</a> </h3>
+<h3> <a href= "https://shubhashis-roy.github.io/Birthday-Wishes-Website/" >Live Demo</a> </h3>
 <hr/>
 
 ### Description
